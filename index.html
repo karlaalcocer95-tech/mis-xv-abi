@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIS XV AÑOS - ABI YAMILETH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  color: #C9A24D;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contenedor {
+  padding: 20px;
+  animation: aparecer 1.5s ease-out;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #C9A24D;
+  letter-spacing: 1px;
+}
+
+h1 { font-size: 42px; }
+h2 { font-size: 30px; }
+
+.foto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #C9A24D;
+  margin: 20px auto;
+  display: block;
+}
+
+.seccion {
+  background: rgba(255,255,255,0.85);
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 25px;
+  max-width: 650px;
+  color: #7A5A1E;
+}
+
+.tarjeta-elegante {
+  background: #fffdf7;
+  border: 3px solid #C9A24D;
+  border-radius: 30px;
+  padding: 30px 20px;
+  margin: 25px auto;
+  max-width: 650px;
+  color: #7A5A1E;
+}
+
+/* CONTADOR */
+#contador {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* BOTONES */
+.boton {
+  display: inline-block;
+  padding: 14px 26px;
+  background: #C9A24D;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+/* BOTÓN MÚSICA */
+.boton-musica {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+}
+
+/* SOBRES */
+.sobres {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.sobre {
+  display: inline-block;
+  margin: 0 8px;
+  animation: flotar 2.5s ease-in-out infinite;
+}
+
+.sobre:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* MISA */
+.misa h3 {
+  font-size: 30px;
+}
+
+.misa p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* RECEPCIÓN */
+.recepcion h3 {
+  font-size: 32px;
+}
+
+.recepcion p {
+  font-size: 22px;
+  line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="boton-musica">
+  <button class="boton" onclick="reproducirMusica()">🎵 MÚSICA</button>
+</div>
+
+<audio id="musica" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="contenedor">
+
+<h1>MIS XV AÑOS</h1>
+<h2>ABI YAMILETH FLORES ALPIZAR</h2>
+
+<img src="abi.jpg" class="foto">
+
+<div class="seccion">
+<p>
+CON LA BENDICIÓN DE DIOS Y EL AMOR DE MIS PADRES:<br><br>
+<strong>DOMINGO FLORES SÁNCHEZ</strong><br>
+<strong>MARISOL ALPIZAR MONDRAGÓN</strong><br><br>
+MIS PADRINOS:<br><br>
+<strong>HUMBERTO ORTIZ</strong><br>
+<strong>ANGÉLICA MARTÍNEZ</strong>
+</p>
+</div>
+
+<div class="seccion">
+<h3>FALTAN</h3>
+<div id="contador"></div>
+</div>
+
+<div class="seccion misa">
+<h3>MISA</h3>
+<p>
+SÁBADO 7 DE FEBRERO DE 2026<br>
+12:00 PM<br>
+IGLESIA DE SAN ISIDRO LABRADOR<br>
+ZACATEPEC, TEJUPILCO, ESTADO DE MÉXICO
+</p>
+
+<p>
+"HOY, AL CUMPLIR MIS 15 AÑOS, DESEO PONER MI VIDA EN TUS MANOS.
+GRACIAS POR EL ESPÍRITU VALIENTE Y BUENO QUE ME HAS DADO.
+TE PROMETO NO ALEJARME DE TU SENDA.
+TE INVITO A COMPARTIR ESTA CELEBRACIÓN DE MI FE Y MI FUTURO."
+</p>
+
+<a class="boton" href="https://maps.app.goo.gl/zp279q6fZdMfi8RC8?g_st=aw" target="_blank">
+VER UBICACIÓN
+</a>
+</div>
+
+<div class="seccion recepcion">
+<h3>RECEPCIÓN</h3>
+<p>
+2:30 PM<br>
+RINCÓN DEL CRISTO<br>
+SULTEPEC, ESTADO DE MÉXICO
+</p>
+
+<a class="boton" href="https://maps.app.goo.gl/SQdsmk1zNe41NUkj7?g_st=aw" target="_blank">
+VER UBICACIÓN
+</a>
+</div>
+
+<div class="tarjeta-elegante">
+<h3>SUGERENCIA DE REGALOS</h3>
+
+<div class="sobres">
+  <span class="sobre">✉️</span>
+  <span class="sobre">✉️</span>
+</div>
+
+<p><strong>LLUVIA DE SOBRES</strong></p>
+
+<p>
+EL MEJOR REGALO ES TU COMPAÑÍA EN ESTE DÍA TAN ESPECIAL.
+SI DESEAS HACERME UN OBSEQUIO Y NO SABES QUÉ REGALARME,
+LO PUEDES HACER EN EFECTIVO EN UN SOBRE.
+EN MI MESA PRINCIPAL TENDRÉ UN COFRE DONDE LO PODRÁS DEPOSITAR.
+</p>
+</div>
+
+<div class="tarjeta-elegante">
+<h3>CÓDIGO DE VESTIMENTA</h3>
+<p>VISTE COMO TÚ TE SIENTAS MÁS CÓMODO PARA DISFRUTAR LA FIESTA.</p>
+</div>
+
+<div class="tarjeta-elegante">
+<h3>ITINERARIO</h3>
+
+<p>⛪ <strong>MISA</strong><br>12:00 PM</p>
+<p>🎉 <strong>RECEPCIÓN</strong><br>2:30 PM</p>
+<p>🍽️ <strong>COMIDA</strong><br>3:00 A 5:00 PM</p>
+<p>🎤 <strong>PROGRAMA</strong><br>5:00 PM</p>
+<p>💃 <strong>BAILE</strong><br>6:00 PM</p>
+</div>
+
+</div>
+
+<script>
+function reproducirMusica() {
+  document.getElementById("musica").play();
+}
+
+const evento = new Date("February 7, 2026 12:00:00").getTime();
+setInterval(() => {
+  const ahora = new Date().getTime();
+  const d = evento - ahora;
+  document.getElementById("contador").innerHTML =
+    Math.floor(d / (1000*60*60*24)) + " DÍAS " +
+    Math.floor((d % (1000*60*60*24)) / (1000*60*60)) + " H " +
+    Math.floor((d % (1000*60*60)) / (1000*60)) + " M " +
+    Math.floor((d % (1000*60)) / 1000) + " S";
+}, 1000);
+</script>
+
+</body>
+</html>
